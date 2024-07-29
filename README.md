@@ -25,7 +25,7 @@ Download the repo to your hard drive.
 
 ## Start App
 
-After downloading the app, `cd` to `python_rithmic_trading_app`.
+After downloading the repo, `cd` to `python_rithmic_trading_app`.
 
 Run the following command:
 
