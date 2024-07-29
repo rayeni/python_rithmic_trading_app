@@ -41,6 +41,10 @@ python rithmic_trading_app.py 00000000-DEMO password123 NYMEX CLZ4 1 Ironbeam Ir
 
 After starting the trading app, you see a series of **DEBUG** messages indicticating that the app is receiving tick data, monitoring PnL and position data, and is executing the strategy placeholder every five minutes.
 
+## Stop App
+
+To stop the app, issue a KeyboardInterrupt, `Ctrl+C`.
+
 ## Live Trading
 
 After thoroughly testing your trading strategy and execution logic, if you wish to trade live, do the following:
