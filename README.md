@@ -17,7 +17,7 @@
 * After passing conformance testing, Rithmic will send you a four-character prefix. 
 * In `md_stream.py`, `pos_pnl_stream.py`, `hist_bars_ohlc.py`, and `place_orders.py`, find the following variable:
     * `rq.app_name`
-    * Update it's value by replacing `CHANGE_ME` with the prefix issued by Rithmic.
+    * Update its value by replacing `CHANGE_ME` with the prefix issued by Rithmic.
     
 ## Installation
 
