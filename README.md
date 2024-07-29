@@ -12,7 +12,7 @@
 
 ## Prequisites
 
-* You must have either a Rithmic Paper Trading or Rithmic Live account, NOT A TEST ACCOUNT.
+* You must have either a Rithmic Paper Trading or Rithmic Live account, **NOT A TEST ACCOUNT**.
 * You must pass Rithmic's conformance testing.
 * After passing conformance testing, Rithmic will send you a four-character prefix. 
 * In `md_stream.py`, `pos_pnl_stream.py`, `hist_bars_ohlc.py`, and `place_orders.py`, find the following variable:
@@ -41,6 +41,12 @@ python rithmic_trading_app.py 00000000-DEMO password123 NYMEX CLZ4 1 Ironbeam Ir
 
 After starting the trading app, you see a series of **DEBUG** messages indicticating that the app is receiving tick data, monitoring PnL and position data, and is executing the strategy placeholder every five minutes.
 
+## Live Trading
+
+After thoroughly testing your trading strategy and execution logic, if you wish to trade live, do the following:
+
+* In `rithmic_trading_app.py`, find the variable `system_name`.
+* Change its value from `Rithmic Paper Trading` to `Rithmic 01`.
      
 
 
