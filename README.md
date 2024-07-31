@@ -33,7 +33,7 @@ Run the following command:
 python rithmic_trading_app.py [username] [password] [exchange] [contract symbol] [contact qty] [FCM] [IB]
 
 
-For example, if your Rithmic credentials are **00000000-DEMO/password123** and you want the trading app to monitor the **Crude Oil** market and to trade only **one quantity** of the **December 2024** contract, through your **IB (Ironbeam) and FCM (Ironbeam)**, then you would run the following command:
+For example, if your Rithmic credentials are **00000000-DEMO/password123** and you want the trading app to monitor the **Crude Oil** market and to trade only **one quantity** of the **December 2024** contract, through your **IB (e.g., Ironbeam) and FCM (e.g., Ironbeam)**, then you would run the following command:
 
 ```
 python rithmic_trading_app.py 00000000-DEMO password123 NYMEX CLZ4 1 Ironbeam Ironbeam
