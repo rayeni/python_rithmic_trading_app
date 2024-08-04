@@ -1,5 +1,11 @@
 #!/usr/bin/env python3
+'''
+Created on August 4, 2024
 
+Author: Rufus Ayeni
+
+Contact: https://github.com/rayeni/python_rithmic_trading_app/discussions
+'''
 #################################################################
 # LIBRARY IMPORTS                                               #
 #################################################################
