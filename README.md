@@ -39,7 +39,7 @@ For example, if your Rithmic credentials are **00000000-DEMO/password123** and y
 python rithmic_trading_app.py 00000000-DEMO password123 NYMEX CLZ4 1 Ironbeam Ironbeam
 ``` 
 
-After starting the trading app, you will see a series of **DEBUG** messages indicating that the app is receiving tick data, monitoring PnL and position data, and is executing the strategy placeholder every five minutes.
+After starting the trading app, you will see a series of **INFO** messages indicating that the app is receiving tick data, monitoring PnL and position data, and is executing the strategy placeholder every five minutes.
 
 ## Stop App
 

@@ -53,7 +53,7 @@ fcm_id           = sys.argv[6]
 # The introducing broker.
 ib_id            = sys.argv[7]
 
-# The username used to log into RTrader
+# The username used to log into RTrader.
 account_id       = sys.argv[1]
 
 # The order action. Initialized as empty string. 
@@ -73,7 +73,7 @@ time_now   = ''
 timestamps = None
 
 # Frequencies
-# Interval between time stamps
+# Interval between time stamps.
 timestamp_freq = '5T'
 
 # Resample frequency when resampling ticks.
@@ -85,7 +85,7 @@ current_time = ''
 # Time format. Used to formate timestamps.
 tf = '%Y-%m-%d %H:%M:%S'
 
-# Create threading event variable
+# Create threading event variable.
 shutdown_event = threading.Event()
 
 # Initialize last processed index.
@@ -199,7 +199,7 @@ def get_hist_bars():
 
 def set_times():
     ''' 
-    Set the start and end times for the algo
+    Set the start and end times for the algo.
     '''
     
     global end_date
@@ -382,7 +382,7 @@ try:
 
         # Check if 15 seconds have passed since the last print
         if time.time() - last_print_time >= 15:
-            print('\nDEBUG: Printing PNL and position,', current_time_str)
+            print('\nINFO: Printing PNL and position,', current_time_str)
             print_pnl_pos()
             last_print_time = time.time()  # Update the last print time
 
@@ -404,9 +404,6 @@ try:
             print('Daily halt: Market is closed...', current_time.strftime(tf))
             sleep(3600 - current_time.minute * 60 - current_time.second)  # Sleep until 18:00
             continue
-
-        # Convert current_time to a string for comparison
-        #current_time_str = current_time.strftime(tf) # NOT SURE THIS IS NEEDED.  IT MAY BE REDUNDANT. CHECK ABOVE.
 
         # Check if current time is before the strategy start time or after the end time
         if current_time < dt.strptime(start_time, tf) or current_time > dt.strptime(end_time, tf):
@@ -434,7 +431,7 @@ try:
             # If new_data has new data, then process it.
             if not new_data.empty:
                 # Process the new data
-                print('\nDEBUG: New data detected...\n')
+                print('\nINFO: New data detected...\n')
                 print('')
                 print(new_data)
                 print('')
@@ -450,7 +447,7 @@ try:
                 run_strategy()
             else:
                 print('*' * 44)
-                print('DEBUG: No new data detected...\n')
+                print('INFO: No new data detected...\n')
                 print('No need to run strategy', current_time_str)
                 print('*' * 44)
 

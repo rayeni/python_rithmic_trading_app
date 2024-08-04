@@ -275,7 +275,7 @@ class MdStreamApp:
                     new_price = msg.trade_price
 
                     if new_price != last_traded_price:
-                        print(f"\nDEBUG: md_stream: Printing last trade info...")
+                        print(f"\nINFO: md_stream: Printing last trade info...")
                         print(f"\nLastTrade : ")
                         print(f"symbol    : {msg.symbol}")
                         print(f"new_price : {new_price}")

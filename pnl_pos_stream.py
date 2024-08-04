@@ -107,18 +107,18 @@ class PnlPosStreamApp:
         with self.lock:
             # Update Open position/trade pnl
             self.open_position_pnl = float(msg.open_position_pnl)
-            # print(f'DEBUG: Trade PnL: {self.open_position_pnl}')
+            # print(f'INFO: Trade PnL: {self.open_position_pnl}')
             
             # Update close position pnl
             self.close_position_pnl = float(msg.closed_position_pnl)
 
             # Update daily pnl
             self.daily_pnl = self.open_position_pnl + self.close_position_pnl
-            # print(f'DEBUG: Daily PnL: {self.daily_pnl}')
+            # print(f'INFO: Daily PnL: {self.daily_pnl}')
 
             # Update current position
             self.current_position = int(msg.net_quantity)
-            # print(f'DEBUG: Current position: {self.current_position}')
+            # print(f'INFO: Current position: {self.current_position}')
 
     async def instrument_pnl_pos_update(self, msg_buf):
         '''
