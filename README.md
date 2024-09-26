@@ -30,7 +30,7 @@ In the library imports section of the Python files (`md_stream.py`, `pos_pnl_str
 
 #### SSL Cert File
 
-The application files refernces the `rithmic_ssl_cert_auth_params` file.  You have should have received it from Rithmic.  Drop your copy in the main directory.
+The application files references the `rithmic_ssl_cert_auth_params` file.  You should have received that file from Rithmic.  Drop your copy in the root directory.
 
 #### URI
 
