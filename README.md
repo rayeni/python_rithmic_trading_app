@@ -14,10 +14,28 @@
 
 * You must have either a Rithmic Paper Trading or Rithmic Live account, **NOT A TEST ACCOUNT**.
 * You must pass Rithmic's conformance testing.
-* After passing conformance testing, Rithmic will send you a four-character prefix. 
-* In `md_stream.py`, `pos_pnl_stream.py`, `hist_bars_ohlc.py`, and `place_orders.py`, find the following variable:
+* After passing conformance testing, Rithmic will send you the following:
+
+#### A four-character prefix
+
+Rithmic will send you a four-character prefix.
+
+* In `md_stream.py`, `pos_pnl_stream.py`, `hist_bars_ohlc.py`, and `place_orders.py`, find the following variables:
     * `rq.app_name`
     * Update its value by replacing `CHANGE_ME` with the prefix issued by Rithmic.
+
+#### Proto Files
+
+In the library imports section of the Python files (`md_stream.py`, `pos_pnl_stream.py`, `hist_bars_ohlc.py`, and `place_orders.py`) you will see references to `_pb2` files.  You must get those from Rithmic and drop them in the `protobuf` directory.
+
+#### SSL Cert File
+
+The application files refernces the `rithmic_ssl_cert_auth_params` file.  You have should have received it from Rithmic.  Drop your copy in the main directory.
+
+#### URI
+
+After you pass conformance testing, Rithmic will send you the URI to access its system.  In the `rithmic_trading_app.py` file, go to the line `uri = 'CHANGE_ME'` and assign the variable with the URI supplied by Rithmic.
+
     
 ## Installation
 
